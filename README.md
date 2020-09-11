@@ -1,2 +1,2 @@
-# datastructures-and-alogirthms
+# Datastructures and alogrithms
 Data Structures and Algorithms
