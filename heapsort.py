@@ -30,6 +30,20 @@ def buildHeap(arr, n):
 	for i in range(last_nonleaf_node, -1, -1):
 		heapify(arr, n, i)
 
+# main function to do heap sort  
+def heapSort(arr, n): 
+      
+    # Build heap (rearrange array)  
+    buildHeap(arr, n)
+
+    # One by one extract an element from heap  
+    for i in range(n-1, -1, -1): 
+          
+        # Move current root to end # 
+        arr[0], arr[i] = arr[i], arr[0] 
+  
+        # call max heapify on the reduced heap  
+        heapify(arr, i, 0) 
 
 if __name__ == '__main__':
 
@@ -41,7 +55,7 @@ if __name__ == '__main__':
 
 	n = len(arr)
 
-	buildHeap(arr, n)
+	heapSort(arr, n)
 
-	print('After heapify: ', arr)
+	print('Heapsort: ', arr)
 	
