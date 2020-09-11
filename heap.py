@@ -26,6 +26,7 @@ def buildHeap(arr, n):
 
 	last_nonleaf_node = n // 2 - 1
 
+	# looping from last nonleaf node to root node.
 	for i in range(last_nonleaf_node, -1, -1):
 		heapify(arr, n, i)
 
@@ -36,11 +37,11 @@ if __name__ == '__main__':
 
 	arr = [1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17]
 
-	print('Before heap: ', arr)
+	print('Original: ', arr)
 
 	n = len(arr)
 
 	buildHeap(arr, n)
 
-	print('After heap: ', arr)
+	print('After heapify: ', arr)
 	
