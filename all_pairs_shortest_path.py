@@ -1,4 +1,5 @@
 # find all the shortest path for all the vertices
+# also known as Floyd-Warshall algorithm
 
 ## for a single source we can use Dijkstra algorithm 
 ## for which time complexity is O(n).
