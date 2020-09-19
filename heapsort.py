@@ -36,8 +36,10 @@ def heapSort(arr, n):
     # Build heap (rearrange array)  
     buildHeap(arr, n)
 
+    print('Heapify(max): ', arr)
+
     # One by one extract an element from heap  
-    for i in range(n-1, -1, -1): 
+    for i in range(n-1, 0, -1): 
           
         # Move current root to end # 
         arr[0], arr[i] = arr[i], arr[0] 
@@ -51,11 +53,11 @@ if __name__ == '__main__':
 
 	arr = [1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17]
 
-	print('Original: ', arr)
+	print('Original: 	', arr)
 
 	n = len(arr)
 
 	heapSort(arr, n)
 
-	print('Heapsort: ', arr)
+	print('Heapsort: 	', arr)
 	
